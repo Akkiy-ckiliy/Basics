@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f0f9ff; 
+  --foreground: #0c4a6e; 
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@keyframes wave {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(10px, 15px) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-wave {
+  animation: wave 8s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
